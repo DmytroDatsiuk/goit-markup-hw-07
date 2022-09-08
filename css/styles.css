@@ -49,7 +49,7 @@ ul {
 .header {
   border-bottom: 1px solid #ececec;
 }
-.header-container {
+.header__container {
   display: flex;
   align-items: center; 
 }
@@ -73,7 +73,7 @@ ul {
   display: flex;
   margin-left: 93px;
 }
-.nav__list .nav__item + .nav__item {
+.nav__item:not(:first-child) {
   margin-left: 50px;
 }
 .nav__link {
@@ -97,13 +97,10 @@ ul {
   color: var(--brand-color);
   fill: var(--brand-color);
 }
-.nav__list,
-.nav__link.current {
-  color: var(--brand-color);
-  
-}
+
 .current {
   position: relative;
+  color: var(--brand-color);
 }
 .current::after {
   position: absolute;
@@ -121,7 +118,7 @@ ul {
   display: flex;
   margin-left: auto;
 }
-.contact .contact__item + .contact__item {
+.contact__item {
   margin-left: 50px;
 }
 .contact__link {
@@ -166,7 +163,7 @@ ul {
   background-size: contain;
   background-position: center;
 }
-.main-title {
+.hero__title {
   color: var(--primary-white-color);
 
   font-weight: 900;
@@ -295,22 +292,21 @@ ul {
   fill: var(--primary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.comment__text {
+.form__textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-}
-.form__field textarea {
   padding: 12px 16px;
   resize: none;
 }
+
 .form__field:focus-within > .form__input {
   border: 1px solid var(--brand-color);
 }
 .form__field:focus-within > .form__icon {
   fill: var(--brand-color);
 }
-.form__field:focus-within > .comment__text {
+.form__field:focus-within > .form__textarea {
   border: 1px solid var(--brand-color);
 }
 .checkbox {
@@ -381,7 +377,7 @@ ul {
 .features__item {
   width: 270px;
 }
-.features .features__item + .features__item {
+.features__item:not(:first-child) {
   margin-left: 30px;
 }
 .features__box {
@@ -429,7 +425,7 @@ ul {
 .gallery {
   display: flex;
 }
-.gallery .gallery__item + .gallery__item {
+.gallery__item:not(:first-child) {
   margin-left: 30px;
 }
 .gallery__item {
@@ -470,7 +466,7 @@ ul {
   display: flex;
   text-align: center;
 }
-.team .team__item + .team__item {
+.team__item:not(:first-child) {
   margin-left: 30px;
 }
 .team__item {
@@ -684,7 +680,7 @@ ul {
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
-  cursor: pointer;
+
 }
 .follow__button {
   display: flex;

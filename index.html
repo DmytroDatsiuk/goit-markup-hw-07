@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- ?<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка --> 
     <header class="header">
-      <div class="container header-container">
+      <div class="container header__container">
         <nav class="nav">
           <a class="logo nav__logo" href="./index.html">Web<span class="nav__logo--color">Studio</span></a>
           <ul class="nav__list list">
@@ -54,8 +54,8 @@
     <!-- Hero -->
       <section class="hero">
         <div class="container">
-          <h1 class="main-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br /> ВАШОГО БІЗНЕСУ</h1>
-          <button type="button" class="button" data-modal-open>Замовити послугу</button>
+          <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br /> ВАШОГО БІЗНЕСУ</h1>
+          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button data-modal-close class="modal__button">
@@ -88,7 +88,7 @@
                     </label>
                     <label class="form__field comment">
                       <span class="form__label">Кометар</span>
-                      <textarea class="comment__text" name="comment" rows="5" placeholder="Введіть текст"></textarea>
+                      <textarea class="form__textarea" name="comment" rows="5" placeholder="Введіть текст"></textarea>
                     </label>
                     <label class="form__field checkbox">
                       <input class="checkbox__input visually-hidden" type="checkbox" name="topic" value="check-label">
