@@ -633,7 +633,7 @@ summary {
   letter-spacing: 0.03em;
 }
 
-.gallery-section {
+.gallery__section-no-padding-top {
   padding-top: 0;
 }
 
@@ -677,7 +677,7 @@ summary {
   text-transform: uppercase;
 }
 
-.team-section {
+.team__section-bg-color {
   background-color: #f5f4fa;
 }
 
