@@ -23,9 +23,10 @@
 .address {
     font-style: normal;
   
-  &__item:not(:last-child) {
-    margin-bottom: 9px;
-  }
+    &__list {
+        @extend %list;
+        gap: 9px;
+    }
   &__link {
     color: $primary-white-color;
   
@@ -33,8 +34,6 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
-    
-  
     transition: color 250ms $cubic;
   }
   
@@ -67,6 +66,7 @@
     text-transform: uppercase;
   }
   &__list {
+    @extend %list;
     display: flex;
     gap: 10px;
   }

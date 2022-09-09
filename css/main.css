@@ -16,10 +16,6 @@ ul {
   padding: 0;
 }
 
-.list {
-  list-style-type: none;
-}
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -53,6 +49,10 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.works, .filter, .footer-social__list, .address__list, .client, .social, .team, .gallery, .features, .contact, .nav__list {
+  list-style-type: none;
 }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -326,9 +326,7 @@ summary {
   display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
-}
-.nav__item:not(:first-child) {
-  margin-left: 50px;
+  gap: 50px;
 }
 .nav__link {
   display: block;
@@ -379,9 +377,7 @@ summary {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-}
-.contact__item {
-  margin-left: 50px;
+  gap: 50px;
 }
 .contact__link {
   display: -webkit-box;
@@ -556,7 +552,7 @@ summary {
   display: inline-block;
   width: 12px;
   height: 12px;
-  fill: var(--primary-text-color);
+  fill: #212121;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -576,6 +572,44 @@ summary {
 .form__field:focus-within > .form__textarea {
   border: 1px solid #2196f3;
 }
+
+.checkbox {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+}
+.checkbox__input:checked + .checkbox__icon {
+  border-color: #2196f3;
+  background-color: #2196f3;
+  background-origin: border-box;
+}
+.checkbox__icon {
+  margin-right: 7px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  background-color: transparent;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox__link {
+  color: #2196f3;
+}
+
 .form__button {
   width: 200px;
   height: 50px;
@@ -641,9 +675,7 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.gallery__item:not(:first-child) {
-  margin-left: 30px;
+  gap: 30px;
 }
 .gallery__img {
   display: block;
@@ -686,9 +718,7 @@ summary {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-}
-.team__item:not(:first-child) {
-  margin-left: 30px;
+  gap: 30px;
 }
 .team__item {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -821,8 +851,8 @@ summary {
 .address {
   font-style: normal;
 }
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
+.address__list {
+  gap: 9px;
 }
 .address__link {
   color: #ffffff;

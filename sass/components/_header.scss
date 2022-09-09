@@ -15,12 +15,12 @@
         color: #000000;
     }
     &__list {
+        @extend %list;
         display: flex;
         margin-left: 93px;
+        gap: 50px;
     }
-    &__item:not(:first-child) {
-        margin-left: 50px;
-    }
+    
 
     &__link {
     display: block;
@@ -68,12 +68,12 @@
       }
   }
   .contact {
+    @extend %list;
     display: flex;
     margin-left: auto;
+    gap: 50px;
 
-    &__item {
-        margin-left: 50px;
-      }
+    
     &__link {
         display: flex;
         padding: 0;
