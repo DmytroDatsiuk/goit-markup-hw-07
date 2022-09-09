@@ -431,6 +431,7 @@ summary {
   line-height: 1.36;
   letter-spacing: 0.03em;
 }
+
 .hero__button {
   color: #ffffff;
   background-color: #2196f3;
@@ -446,6 +447,9 @@ summary {
   height: 50px;
   border: 0;
   cursor: pointer;
+}
+.hero__button:hover, .hero__button:focus {
+  background-color: #188CE8;
 }
 
 .backdrop {

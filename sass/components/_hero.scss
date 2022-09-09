@@ -26,26 +26,30 @@
         line-height: 1.36;
         letter-spacing: 0.03em;
     }
-    &__button {
-        color: $primary-white-color;
-        background-color: $brand-color;
-      
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.03em;
-        
-        text-align: center;
-      
-        border-radius: 4px;
-        padding: 10px 32px;
-        display: inline-block;
-        min-width: 216px;
-        height: 50px;
-        border: 0;
-        cursor: pointer;
-    }
   }
+  .hero__button {
+    color: $primary-white-color;
+    background-color: $brand-color;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    
+    text-align: center;
+  
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: inline-block;
+    min-width: 216px;
+    height: 50px;
+    border: 0;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      background-color: $secondary-brand-color;
+    }
+}
   .backdrop {
     position: fixed;
     top: 0;
