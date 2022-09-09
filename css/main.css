@@ -330,7 +330,6 @@ summary {
 .nav__item:not(:first-child) {
   margin-left: 50px;
 }
-
 .nav__link {
   display: block;
   padding-top: 32px;
@@ -344,7 +343,7 @@ summary {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__link__link:hover, .nav__link__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -407,6 +406,10 @@ summary {
 }
 .contact__icon {
   margin-right: 10px;
+}
+.contact__link:hover, .contact__link:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .hero {

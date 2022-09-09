@@ -21,8 +21,8 @@
     &__item:not(:first-child) {
         margin-left: 50px;
     }
-}
-.nav__link {
+
+    &__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -35,13 +35,13 @@
     text-decoration: none;
   
     transition: color 250ms $cubic;
-
+    }
     &__link:hover,
     &__link:focus {
     color: $brand-color;
     fill: $brand-color;
     }
-  }
+}
   .logo {
     color: $brand-color;
     font-family: 'Raleway', sans-serif;
@@ -95,6 +95,11 @@
     }
     &__icon {
     margin-right: 10px;
+    }
+    &__link:hover,
+    &__link:focus {
+        color: $brand-color;
+        fill: $brand-color;
     }
   }
   
