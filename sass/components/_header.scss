@@ -9,20 +9,23 @@
 .nav {
     display: flex;
     align-items: center;
-
+}
+    .nav__logo {
+        @extend %logo;
     
-    &__logo--color {
+    &--color {
         color: #000000;
     }
-    &__list {
+}
+    .nav__list {
         @extend %list;
         display: flex;
         margin-left: 93px;
         gap: 50px;
     }
     
-
-    &__link {
+    
+    .nav__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -35,20 +38,12 @@
     text-decoration: none;
   
     transition: color 250ms $cubic;
-    }
-    &__link:hover,
-    &__link:focus {
+    
+    &:hover,
+    &:focus {
     color: $brand-color;
     fill: $brand-color;
     }
-}
-  .logo {
-    color: $brand-color;
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
 }
   .current {
     position: relative;
@@ -73,8 +68,11 @@
     margin-left: auto;
     gap: 50px;
 
-    
-    &__link {
+    &__icon {
+        margin-right: 10px;
+        }
+    }
+    .contact__link {
         display: flex;
         padding: 0;
         padding-top: 32px;
@@ -83,23 +81,19 @@
         color: $secondary-text-color;
         align-items: center;
         fill: $secondary-text-color;
-        
+      
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         text-decoration: none;
-        
+      
         transition: color 250ms $cubic,
-        fill 250ms $cubic;
-    }
-    &__icon {
-    margin-right: 10px;
-    }
-    &__link:hover,
-    &__link:focus {
+        fill 250ms $cubic; 
+
+        &:hover,
+        &:focus {
         color: $brand-color;
         fill: $brand-color;
-    }
-  }
-  
+        }
+      }

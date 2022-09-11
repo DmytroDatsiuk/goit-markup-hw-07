@@ -2,32 +2,33 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $primary-background;
-
-  &__container {
+}
+  .footer__container {
     display: flex;
     align-items: baseline;
   }
-  &__logo {
+  .footer__logo {
+    @extend %logo;
     display: inline-block;
     margin-bottom: 20px;
-  }
-  &__logo--color {
+  
+    &--color {
     color: $primary-white-color;
   }
-  &__contact {
+  }
+  .footer__contact {
     margin-right: 70px;
   }
-}
   
   
 .address {
     font-style: normal;
-  
-    &__list {
+}
+    .address__list {
         @extend %list;
         gap: 9px;
     }
-  &__link {
+.address__link {
     color: $primary-white-color;
   
     font-size: 14px;
@@ -35,9 +36,9 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     transition: color 250ms $cubic;
-  }
   
-  &__link.call {
+  
+  &.call {
     color: $text-rgba;
   
     font-size: 14px;
@@ -46,16 +47,16 @@
   
     transition: color 250ms $cubic;
   }
-  &__link:hover,
-  &__link:focus,
-  &__link.call:hover,
-  &__link.call:focus {
+  &:hover,
+  &:focus,
+  &.call:hover,
+  &.call:focus {
     color: $brand-color;
     
   }
 }
-.footer-social {
-  &__title {
+
+  .footer-social__title {
     color: $primary-white-color;
     margin-bottom: 20px;
   
@@ -65,14 +66,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-  &__list {
+  .footer-social__list {
     @extend %list;
     display: flex;
     gap: 10px;
   }
   
   
-  &__link {
+.footer-social__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,23 +85,23 @@
   
     width: 44px;
     height: 44px;
-  }
-  &__link:hover,
-  &__link:focus {
+  
+  &:hover,
+  &:focus {
     background-color: $brand-color;
   }
-  &__icon {
+}
+.footer-social__icon {
     fill: $primary-white-color;
   }
-}
 .follow {
   width: 570px;
   margin-left: auto;
-
-    &__box {
+}
+  .follow__box {
     display: flex;
     }
-    &__input {
+    .follow__input {
     width: 358px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -118,13 +119,12 @@
     line-height: calc(20 / 16);
     letter-spacing: 0.03em;
     }
-    &__button {
+    .follow__button {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     }
-    &__icon {
+    .follow__icon {
     margin-left: 10px;
     }
-}

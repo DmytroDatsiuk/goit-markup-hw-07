@@ -15,7 +15,7 @@
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a class="logo nav__logo" href="./index.html">Web<span class="nav__logo--color">Studio</span></a>
+          <a class="nav__logo" href="./index.html">Web<span class="nav__logo--color">Studio</span></a>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link current">Студія</a>
@@ -55,52 +55,6 @@
         <div class="container">
           <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br /> ВАШОГО БІЗНЕСУ</h1>
           <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button data-modal-close class="modal__button">
-                <svg class="modal__icon" width="11" height="11" aria-label="close">
-                  <use class="modal__ic" href="./img/SVG/icons.svg#icon-xvecto"></use>
-                </svg>
-              </button>
-                <form class="form">
-                  <h2 class="form__title">Залиште свої дані, ми вам передзвонимо</h2>                   
-                    <label class="form__field">
-                      <span class="form__label">Ім'я</span>
-                      <input class="form__input" type="text" name="name" autofocus placeholder="">
-                      <svg class="form__icon" width="12" height="12">
-                        <use href="./img/SVG/icons.svg#name"></use>
-                      </svg>
-                    </label>
-                    <label class="form__field">
-                      <span class="form__label">Телефон</span>
-                      <input class="form__input" type="tel" name="tel" placeholder="">
-                      <svg class="form__icon" width="13" height="13">
-                        <use href="./img/SVG/icons.svg#tel"></use>
-                      </svg>
-                    </label>                   
-                    <label class="form__field">
-                      <span class="form__label">Пошта</span>
-                      <input class="form__input" type="email" name="mail" placeholder="" >
-                      <svg class="form__icon" width="15" height="12">
-                        <use href="./img/SVG/icons.svg#mail"></use>
-                      </svg>
-                    </label>
-                    <label class="form__field comment">
-                      <span class="form__label">Кометар</span>
-                      <textarea class="form__textarea" name="comment" rows="5" placeholder="Введіть текст"></textarea>
-                    </label>
-                    <label class="form__field checkbox">
-                      <input class="checkbox__input visually-hidden" type="checkbox" name="topic" value="check-label">
-                      <svg class="checkbox__icon">
-                        <use href="./img/SVG/icons.svg#check"></use>
-                      </svg>
-                      <span class="checkbox__label">Погоджуююся з розсилкою та приймаю <a class="checkbox__link" href="">Умови договору</a></span>
-                    </label>
-                    <button type="submit" class="form__button">Відправити</button>
-                </form>
-            </div>
-          </div>
-          <script src="./js/modal.js"></script>
         </div>
       </section>
       <!-- Features -->
@@ -156,9 +110,9 @@
         </div>
       </section>
       <!-- Gallery -->
-      <section class="section gallery__section-no-padding-top">
+      <section class="section section-no-padding-top">
         <div class="container">
-          <h2 class="title">Чим ми займаємося</h2>
+          <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="gallery">
             <li class="gallery__item">
               <div class="gallery__thumb">
@@ -200,9 +154,9 @@
         </div>
       </section>
       <!-- Team -->
-      <section class="section team__section-bg-color">
+      <section class="section section-bg-color">
         <div class="container">
-          <h2 class="title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
               <img class="team__img" src="./img/Team/людина1.jpg" alt="Мужчина" width="270" height="260" />
@@ -358,47 +312,47 @@
       <!-- Clients -->
       <section class="section">
         <div class="container">
-        <h2 class="title">Постійні клієнти</h2>
-        <ul class="client">
-          <li class="client__item">
-            <a href="" class="client__link">
-              <svg class="client__icon" width="106" height="60" aria-label="Лого ya&go">
-                <use class="client__icons" href="./img/SVG/icons.svg#yago" ></use>
+        <h2 class="section__title">Постійні клієнти</h2>
+        <ul class="clients">
+          <li class="clients__item">
+            <a href="" class="clients__link">
+              <svg class="clients__icon" width="106" height="60" aria-label="Лого ya&go">
+                <use class="clients__icons" href="./img/SVG/icons.svg#yago" ></use>
               </svg>
             </a>
           </li>
-          <li class="client__item">
-            <a href="" class="client__link">
-              <svg class="client__icon" width="106" height="60" aria-label="Лого tagline-here">
-                <use class="client__icons" href="./img/SVG/icons.svg#tagline-here" ></use>
+          <li class="clients__item">
+            <a href="" class="clients__link">
+              <svg class="clients__icon" width="106" height="60" aria-label="Лого tagline-here">
+                <use class="clients__icons" href="./img/SVG/icons.svg#tagline-here" ></use>
               </svg>
             </a>
           </li>
-          <li class="client__item">
-            <a href="" class="client__link">
-              <svg class="client__icon" width="106" height="60" aria-label="Лого company">
-                <use class="client__icons" href="./img/SVG/icons.svg#company" ></use>
+          <li class="clients__item">
+            <a href="" class="clients__link">
+              <svg class="clients__icon" width="106" height="60" aria-label="Лого company">
+                <use class="clients__icons" href="./img/SVG/icons.svg#company" ></use>
               </svg>
             </a>
           </li>
-          <li class="client__item">
-            <a href="" class="client__link">
-              <svg class="client__icon" width="106" height="60" aria-label="Лого tagline-here">
-                <use class="client__icons" href="./img/SVG/icons.svg#foster" ></use>
+          <li class="clients__item">
+            <a href="" class="clients__link">
+              <svg class="clients__icon" width="106" height="60" aria-label="Лого tagline-here">
+                <use class="clients__icons" href="./img/SVG/icons.svg#foster" ></use>
               </svg>
             </a>
           </li>
-          <li class="client__item">
-            <a href="" class="client__link">
-              <svg class="client__icon" width="106" height="60" aria-label="Лого company">
-                <use class="client__icons" href="./img/SVG/icons.svg#brend" ></use>
+          <li class="clients__item">
+            <a href="" class="clients__link">
+              <svg class="clients__icon" width="106" height="60" aria-label="Лого company">
+                <use class="clients__icons" href="./img/SVG/icons.svg#brend" ></use>
               </svg>
             </a>
           </li>
-          <li class="client__item">
-            <a href="" class="client__link">
-              <svg class="client__icon" width="106" height="60" aria-label="Лого tag-line">
-                <use class="client__icons" href="./img/SVG/icons.svg#tag-line" ></use>
+          <li class="clients__item">
+            <a href="" class="clients__link">
+              <svg class="clients__icon" width="106" height="60" aria-label="Лого tag-line">
+                <use class="clients__icons" href="./img/SVG/icons.svg#tag-line" ></use>
               </svg>
             </a>
           </li>
@@ -411,7 +365,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__contact">
-          <a class="logo footer__logo" href="./index.html">Web<span class="footer__logo--color">Studio</span></a>
+          <a class="footer__logo" href="./index.html">Web<span class="footer__logo--color">Studio</span></a>
           <address class="address">
             <ul class="address__list">
               <li class="address__item">
@@ -482,5 +436,51 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal__button">
+          <svg class="modal__icon" width="11" height="11" aria-label="close">
+            <use class="modal__ic" href="./img/SVG/icons.svg#icon-xvecto"></use>
+          </svg>
+        </button>
+          <form class="form">
+            <h2 class="form__title">Залиште свої дані, ми вам передзвонимо</h2>                   
+              <label class="form__field">
+                <span class="form__label">Ім'я</span>
+                <input class="form__input" type="text" name="name" autofocus placeholder="">
+                <svg class="form__icon" width="12" height="12">
+                  <use href="./img/SVG/icons.svg#name"></use>
+                </svg>
+              </label>
+              <label class="form__field">
+                <span class="form__label">Телефон</span>
+                <input class="form__input" type="tel" name="tel" placeholder="">
+                <svg class="form__icon" width="13" height="13">
+                  <use href="./img/SVG/icons.svg#tel"></use>
+                </svg>
+              </label>                   
+              <label class="form__field">
+                <span class="form__label">Пошта</span>
+                <input class="form__input" type="email" name="mail" placeholder="" >
+                <svg class="form__icon" width="15" height="12">
+                  <use href="./img/SVG/icons.svg#mail"></use>
+                </svg>
+              </label>
+              <label class="form__field comment">
+                <span class="form__label">Кометар</span>
+                <textarea class="form__textarea" name="comment" rows="5" placeholder="Введіть текст"></textarea>
+              </label>
+              <label class="form__field checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="topic" value="check-label">
+                <svg class="checkbox__icon">
+                  <use href="./img/SVG/icons.svg#check"></use>
+                </svg>
+                <span class="checkbox__label">Погоджуююся з розсилкою та приймаю <a class="checkbox__link" href="">Умови договору</a></span>
+              </label>
+              <button type="submit" class="form__button">Відправити</button>
+          </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

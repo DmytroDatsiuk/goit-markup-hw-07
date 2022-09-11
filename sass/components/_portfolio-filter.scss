@@ -4,8 +4,8 @@
     justify-content: center;
     margin-bottom: 50px;
     gap: 8px;
-  
-  &__button {
+}
+.filter__button {
     color: $primary-text-color;
     background-color: #f5f4fa;
   
@@ -25,9 +25,9 @@
     transition: color 250ms $cubic,
     background-color 250ms $cubic,
     box-shadow 250ms $cubic;
-  }
-  &__button:hover,
-  &__button:focus {
+  
+  &:hover,
+  &:focus {
     color: $primary-white-color;
     background-color: $brand-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 

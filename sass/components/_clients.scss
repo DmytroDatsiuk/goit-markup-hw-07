@@ -1,13 +1,13 @@
-.client {
+.clients {
     @extend %list;
     display: flex;
     gap: 30px;
-
-  &__item {
+}
+  .clients__item {
     width: 170px;
     height: 92px;
   }
-  &__link {
+  .clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,13 +23,13 @@
   
     transition: border-color 250ms $cubic,
     fill 250ms $cubic;
-  }
-  &__link:hover,
-  &__link:focus {
+  
+  &:hover,
+  &:focus {
     border-color: $brand-color;
     fill: $brand-color;
   }
-  &__icon {
+}
+.clients__icon {
     color: currentColor;
   }
-}

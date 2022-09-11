@@ -3,33 +3,34 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-  
-  &__link {
+}
+  .works__link {
     text-decoration: none;
     display: block;
     transition: box-shadow 250ms $cubic;
-  }
-  &__link:hover,
-  &__link:focus {
+  
+  &:hover,
+  &:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
       0px 4px 4px rgba(0, 0, 0, 0.06), 
       1px 4px 6px rgba(0, 0, 0, 0.16);
      
   }
-  &__link:hover &__description {
+  &:hover .works__description {
     transform: translateY(0);
   }
-  &__link:focus  &__description {
+  &:focus .works__description {
     transform: translateY(0);
   }
-  &__thumb {
+}
+  .works__thumb {
     position: relative;
     overflow: hidden;
   }
-  &__img {
+  .works__img {
     display: block;
   }
-  &__description {
+  .works__description {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -53,13 +54,13 @@
     letter-spacing: 0.03em;
   
   }
-  &__border {
+  .works__border {
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     padding: 20px 24px;
   }
-  &__title {
+  .works__title {
     color: $primary-text-color;
   
     font-weight: 700;
@@ -69,19 +70,23 @@
   
     margin-bottom: 4px;
     transition: color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+    color: $brand-color;
   }
-  &__text {
+  }
+  .works__text {
     color: $secondary-text-color;
   
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     transition: color 250ms $cubic;
-  }
-  &__title:hover,
-  &__title:focus,
-  &__text:hover,
-  &__text:focus {
+  
+  
+  &:hover,
+  &:focus {
     color: $brand-color;
   }
 }

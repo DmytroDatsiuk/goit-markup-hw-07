@@ -1,22 +1,18 @@
-.gallery__section-no-padding-top {
-    padding-top: 0;
-  }
+
 .gallery {
     @extend %list;
     display: flex;
     gap: 30px;
-    
-    &__item {
-    }
-    &__img {
+}
+    .gallery__img {
         display: block;
         height: auto;
         max-width: 100%;
     }
-    &__thumb {
+    .gallery__thumb {
         position: relative;
     }
-    &__text {
+    .gallery__text {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -35,4 +31,3 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
     }
-}

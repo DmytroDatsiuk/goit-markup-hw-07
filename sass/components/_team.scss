@@ -1,27 +1,25 @@
-.team__section-bg-color {
-    background-color: $secondary-background;
-  }
+
 .team {
     @extend %list;
     display: flex;
     text-align: center;
     gap: 30px;
-  
-  &__item {
+}
+  .team__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: $primary-white-color;
     border-radius: 0px 0px 4px 4px;
   }
-  &__img {
+  .team__img {
     display: block;
   }
-}
+
 .position {
     padding-top: 30px;
     padding-bottom: 30px;
-
-  &__title {
+}
+    .position__title {
     color: $primary-text-color;
   
     font-weight: 500;
@@ -31,7 +29,7 @@
   
     margin-bottom: 10px;
   }
-  &__text {
+  .position__text {
     color: $secondary-text-color;
   
     font-size: 16px;
@@ -39,14 +37,14 @@
     letter-spacing: 0.03em;
     margin-bottom: 16px;
   }
-}
+
 .social {
   @extend %list;
   display: flex;
   justify-content: center;
   gap: 10px;
-
-    &__link {
+}
+  .social__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,14 +59,14 @@
 
     transition: background-color 250ms $cubic,
     fill 250ms $cubic;
-    }
-    &__link:hover,
-    &__link:focus {
+    
+    &:hover,
+    &:focus {
     background-color: $brand-color;
     fill: $primary-white-color;
     
     }
-    &__icon {
+  }
+    .social__icon {
     color: currentColor;
     }
-}

@@ -1,14 +1,12 @@
 .features {
     @extend %list;
     display: flex;
-  
-  &__item {
+    gap: 30px;
+}
+.features__item {
     width: 270px;
-  }
-  &__item:not(:first-child) {
-    margin-left: 30px;
-  }
-  &__box {
+}
+  .features__box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +15,7 @@
     border-radius: 4px;
     background-color: $secondary-background;
   }
-  &__title {
+  .features__title {
     color: $primary-text-color;
   
     font-weight: 700;
@@ -28,11 +26,10 @@
     margin-top: 30px;
     margin-bottom: 10px;
   }
-  &__text {
+  .features__text {
     color: $secondary-text-color;
   
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
-}
